@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This website tempate was created by: Carlos Theran -->
+<html lang="en">
+  <head>
+      <title>Freeeze</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <link rel="icon" href="../images/shortcut-ice-cream-48.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="../images/shortcut-ice-cream-48.png" type="image/x-icon" />
+  </head> 
+  <body>
+
+    <div id="container">    
+        <header>
+          <a href="index.html"><img src="../images/logo.png" alt="freeeze Logo"></a>
+          
+      </header>
+
+    <nav>
+      <ul>
+         <li><a href="index.html"> Home</a></li>
+         <li><a href="about.html"> About</a></li>
+         <li><a href="contact.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+    <!--Use the main area to add the main content of the webpage -->
+    <main>
+      <div class="hero-section">
+      <img src="../images/map.jpg" alt="Hero Image">
+      </div>
+      <div id="contact">
+        <h2>Do you want to know more? Contact Us today.</h2>
+        <h4>Call us: (813) 555-6789</h4>
+        <h4>Email us: <a href="mailto:freeeze@gelato.net" >freeeze@gelato.net</a></h4>
+        <h4>Visit Us at: Piazza Nazario Sauro, 25/r, 50124 Firenze FI, Italy</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10525782.499074047!2d4.4729870914310315!3d46.34532158156528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56ab5fc3c57d%3A0xb1b312c28b2057b3!2sGelateria%20La%20Carraia!5e0!3m2!1sen!2sus!4v1646697482752!5m2!1sen!2sus" allowfullscreen="" class="map"></iframe>
+      </div>
+
+      <div class="form-container">
+    <div class="form-box">
+        <h2>Customer Information</h2>
+        <form action="/submit-customer-info" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </form>
+    </div>
+
+    <div class="form-box">
+        <h2>Additional Information</h2>
+        <form action="/submit-additional-info" method="post">
+            <fieldset>
+                <legend>I would like to know more about:</legend>
+                <input type="checkbox" id="work-solicitation" name="interest" value="Work Solicitation">
+                <label for="work-solicitation">Work Solicitation</label>
+                <br>
+                <input type="checkbox" id="franchise" name="interest" value="Become a Franchise">
+                <label for="franchise">Become a Franchise</label>
+                <br>
+                <input type="checkbox" id="appointment" name="interest" value="Schedule an Appointment">
+                <label for="appointment">Schedule an Appointment</label>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="form-box">
+        <h2>Referral Source</h2>
+        <form action="/submit-referral-source" method="post">
+            <label for="referral">Referral Source:</label>
+            <select id="referral" name="referral-source">
+                <option value="Friend">Friend</option>
+                <option value="Family">Family</option>
+                <option value="Website">Website</option>
+                <option value="Advertisement">Advertisement</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br>
+            <label for="questions">Questions:</label>
+            <textarea id="questions" name="questions" rows="4"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Use the footer are to add web page footer content -->
+    <footer>
+      <p>&copy; Copyright 2023. All Right Reserved</p>
+    </footer>
+
+    </div>
+  </body>
+  
+</html>

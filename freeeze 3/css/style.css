@@ -1,0 +1,334 @@
+/* CSS reset*/
+body, header, nav, footer, h1, div, img, ul{
+    margin:  0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgb(252, 251, 251);
+    
+}
+
+header{
+    background-color: rgb(232, 113, 100);
+    height: 15px;
+    padding: 7%;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+}
+
+header img{
+    margin: 0 auto;
+}
+
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: rgb(232, 113, 100);/**/
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 1.75em;
+    font-family: 'Send Flower', cursive;
+    border-top: 1px solid rgb(142, 207, 71);
+}
+
+li:first-child{
+    border-top: none;
+}
+
+nav li a{
+    display: block;
+    color: rgb(142, 207, 71);
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+p { color: #685206; 
+    font-family: 'Helvetica Neue', 
+    sans-serif; 
+    font-size: 20px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: inter-word; }
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+main{
+    /*clear: left;*/
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tel-link a{
+    color: rgb(225, 36, 36);
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: rgb(142, 207, 71);
+    padding: 0 1em;
+}
+
+footer p a{
+    color: rgb(142, 207, 71);
+    text-decoration: none;
+}
+
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#contact{
+    text-align: center;
+}
+
+#contact a{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map{
+    border: 8px solid #000;
+}
+
+.hours{
+    margin-left: 10%;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
+.mobile{
+    display: block;
+}
+
+#blackberry, #kiwi, #mango{
+    margin: 0 2%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  
+
+@media screen and (min-width: 630px), print{
+
+    /* Table viewport: show tablet-desktop class, hide mobile class */
+    
+    .tablet-desktop{
+        display: block;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    header{
+        position: static;
+        padding-bottom: 7%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */ 
+    
+    nav li{
+        border-top: none;
+        display: inline-block;
+        /*border-right: 1px solid #fff;*/
+    }
+    
+    nav li:last-child{
+        border-right: none;
+    }
+    
+    nav li a{
+        padding: 0.1em 0.75em;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    
+    main ul{
+        margin: 0 0 4% 10%;
+    
+    }
+    
+    .tel-num{
+        font-size: 1.25em;
+        text-align: center;
+    }
+    
+    .map{
+        width:600px;
+        height:450px;
+    }
+
+     .frame {
+        position: relative; /* position with relative value */
+        max-width: 450px;
+        margin: 2% auto; /* margin with 2% on top/bottom and auto on left/right */
+    }
+    .pic-text {
+        position: absolute; /* position absolute */
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* background color with 50% opacity */
+        color: white; /* font color white */
+        width: auto;
+        padding: 5px;
+        text-align: center;
+        font-family: verdana, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+    @media screen and (min-width: 769px), print {
+    /* Desktop Viewport: Style rule for header */
+    header {
+        float: left;
+    }
+
+    nav ul {
+        /* Add styles for nav ul if needed */
+    }
+
+    nav li {
+        /* Add styles for nav li if needed */
+    }
+
+    nav li a {
+        transition: color 0.3s, background-color 0.3s;
+        color: rgb(142, 207, 71); /* Default text color */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav li a:hover {
+        color: rgb(244, 9, 9);
+        background-color: rgb(226, 141, 141);
+    }
+
+    .action{
+        font-size: 1.35;
+        color: rgb(225,36,36);
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow:5px 5px 8px rgb(142,207,71);
+    }
+
+    .gradient-style {
+    clear: left;
+    border-radius: 5px;
+    border-top: 1px solid rgb(142, 207, 71);
+    border-bottom: 1px solid rgb(142, 207, 71);
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+    background: linear-gradient(to right, rgb(231, 159, 159), rgb(241,203,203));
+}
+
+    .grid {
+        display: grid; /* display property with grid value */
+        grid-template-columns: auto auto; /* define one row and two columns */
+        grid-gap: 10px; /* grid-gap with value 10px */
+    }
+}
+
+/* For Desktop viewport: frame */
+.frame {
+    opacity: 0.9; /* opacity with value 0.9 */
+}
+
+/* For Desktop viewport: frame:hover */
+.frame:hover {
+    opacity: 1; /* opacity 1 on hover */
+    box-shadow: 8px 8px 2px #808080; /* box-shadow */
+    color: #808080; /* text color */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.tablet-desktop table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .tablet-desktop caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .tablet-desktop th, .tablet-desktop td {
+        padding: 8px;
+        text-align: left;
+    }
+    .tablet-desktop th {
+        background-color: rgb(232, 113, 100); /* Header color */
+        color: #fff;
+    }
+    .tablet-desktop tbody tr:nth-child(even) {
+        background-color: rgb(176, 222, 116); /* Even row color */
+    }
+    .tablet-desktop tbody tr:nth-child(odd) {
+        background-color: #fff; /* Odd row color */
+    }
+
+    .hero-section {
+    width: 100%;
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.hero-section img {
+    width: 100%; /* Make the image fill the entire width of the container */
+    height: auto; /* Maintain the original aspect ratio of the image */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+
+.form-container {
+    display: flex;
+    background-color: rgb(323, 113, 100);
+}
+
+.form-box {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Optional: You can style the form boxes further as needed */
+.form-box form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box h2 {
+    margin-top: 0;
+}
+
+
