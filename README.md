@@ -1,2 +1,2 @@
 # Freeeze
-HTML Website for a frozen desert company
+HTML Website for a frozen dessert company
